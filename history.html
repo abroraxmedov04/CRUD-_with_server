@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Expenses</title>
+  </head>
+  <body>
+    <header class="fixed w-full py-[20px] shadow-md">
+      <div
+        class="container max-w-[1200px] mx-auto flex items-center justify-between"
+      >
+        <h1 class="font-bold text-xl">History</h1>
+        <ul class="flex items-center gap-[20px]">
+          <li>
+            <a
+              href="./index.html"
+              class="border-[2px] px-[10px] py-[5px] rounded-md bg-slate-100 hover:bg-black hover:text-white hover:border-transparent transition delay-150"
+              >home</a
+            >
+          </li>
+          <li>
+            <a
+              href="./expenses.html"
+              class="border-[2px] px-[10px] py-[5px] rounded-md bg-slate-100 hover:bg-black hover:text-white hover:border-transparent transition delay-150"
+              >expenses</a
+            >
+          </li>
+          <li>
+            <a
+              href="./income.html"
+              class="border-[2px] px-[10px] py-[5px] rounded-md bg-slate-100 hover:bg-black hover:text-white hover:border-transparent transition delay-150"
+              >incomes</a
+            >
+          </li>
+          <li>
+            <a
+              href="./history.html"
+              class="border-[2px] px-[10px] py-[5px] rounded-md bg-slate-100 hover:bg-black hover:text-white hover:border-transparent transition delay-150"
+              >history</a
+            >
+          </li>
+        </ul>
+
+        <button
+          class="log-out-btn border-[2px] px-[10px] py-[5px] rounded-md bg-slate-100 hover:bg-black hover:text-white hover:border-transparent transition delay-150"
+        >
+          log out
+        </button>
+      </div>
+    </header>
+
+    <main class="pt-[100px]">
+      <section class="container max-w-[1200px] mx-auto">
+        <ul class="income-lists flex flex-col gap-4"></ul>
+      </section>
+    </main>
+
+    <template class="income-list-item">
+      <li
+        class="px-6 py-4 border rounded-md grid grid-cols-5 items-center gap-4"
+      >
+        <h1 class="title font-bold text-lg">Product Title</h1>
+        <p class="category text-sm">product category</p>
+        <p class="type text-sm">product category</p>
+
+        <p class="amount text-lg text-green-700">$15,000</p>
+        <time class="date-income col-span-1 text-sm">14.25.2024</time>
+      </li>
+    </template>
+
+    <script src="./js/history.js"></script>
+  </body>
+</html>
